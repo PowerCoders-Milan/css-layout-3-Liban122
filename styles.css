@@ -1,1 +1,28 @@
 /* USE CSS GRID AND FLEX HERE */
+
+.container {
+
+display: grid;
+min-height: 100vh;
+text-align: center;
+grid-template-rows: 2fr 7fr 1fr;
+
+}
+
+.header{
+background-color: blueviolet;
+
+}
+
+.main{
+    
+    background-color: brown;
+    
+}
+
+.footer{
+   
+    
+    background-color: cyan;
+   
+}
