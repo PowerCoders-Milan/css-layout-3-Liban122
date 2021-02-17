@@ -1,28 +1,39 @@
 /* USE CSS GRID AND FLEX HERE */
 
 .container {
-
-display: grid;
 min-height: 100vh;
+display: grid;
 text-align: center;
-grid-template-rows: 2fr 7fr 1fr;
-
+grid-template-columns: repeat(8,1fr);
+grid-template-rows: 30px 100px auto 30px;
 }
 
 .header{
-background-color: blueviolet;
-
+    grid-column: 1 / -1;
+    background-color: blueviolet;
 }
 
 .main{
-    
+    grid-column: 1 / -1  ;
+    grid-row: auto;
     background-color: brown;
     
 }
 
 .footer{
-   
+   grid-column: 1 / -1;
+    background-color: cyan;  
+}
+
+.content{
+    background-color: coral;
+    grid-row: 2 / 2;
+    grid-column: 1 / 7;
     
-    background-color: cyan;
-   
+}
+
+.aside{
+    background-color: darkcyan;
+    grid-column: 7 / 9;
+    grid-row: 2 / 2;
 }
